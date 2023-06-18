@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .downloadBtn{
+            background-color: #FF78EF;
+            color: #FFFF;
+        }
+        .bottom{
+            background: #343A40;
+            color: #FFFF;
+            width: 100%;
+            height: 410px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contentText{
+            background: #F7F8F9;
+            padding: 180px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .contentText>div{
+            font-size: 34px;
+        }
+        .headContent{
+            position: absolute;
+            left: 177px;
+            top: 201px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Place-Pick 소개 페이지</title>
+</head>
+<body>
+
+<div>
+    <div class = "head">
+        <img th:src="@{/img/mainBanner.png}" width="100%" height="100%">
+        <div class="headContent">
+            <img th:src="@{/img/logo.png}" >
+            <div>친구나 연인들끼리</div>
+            <div>약속 장소를 찾을 때는 플레이스픽</div>
+            <div class="downloadBtn">
+                앱 다운로드
+            </div>
+        </div>
+    </div>
+    <div class = "body">
+        <div class="contentText">
+            <div>내가 만든 코스를 친구나 연인들끼리 공유하세요.<br>
+                추억이 가득한 코스를 친구들에게 추천하세요.</div>
+
+        </div>
+        <div class = "contentImg">
+            <img th:src="@{/img/courseIntroduce.png}" width="100%">
+        </div>
+    </div>
+    <div class = "bottom">
+        지금, 나만의 코스를 만들어보세요!
+    </div>
+</div>
+</body>
+</html>
